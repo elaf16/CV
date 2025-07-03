@@ -1,79 +1,77 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سيرتي الذاتية</title>
+  <title>My Resume</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      direction: ltr; /* تحويل اتجاه الصفحة لليسار */
+    }
+  </style>
 </head>
 <body>
-  <!-- زر التبديل بين الوضع الفاتح والداكن -->
-  <button id="toggleMode">تبديل الوضع</button>
+  <!-- Toggle button -->
+  <button id="toggleMode">Toggle Mode</button>
 
-  <!-- حاوية السيرة الذاتية -->
+  <!-- Resume container -->
   <div class="cv-container">
-    <!-- المعلومات الشخصية -->
-    <h1>إيلاف فهد</h1>
-    <p><strong>البريد الإلكتروني:</strong> faylaf166@gmail.com</p>
-    <p><strong>رقم الهاتف:</strong> 0506528529</p>
+    <!-- Personal Information -->
+    <h1>Elaf Fahad</h1>
+    <p><strong>Email:</strong> faylaf166@gmail.com</p>
+    <p><strong>Phone:</strong> 0506528529</p>
     <p>
       <strong>LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/elaf-a-22a51331a" target="_blank">www.linkedin.com/in/elaf-a-22a51331a</a>
+      <a href="https://www.linkedin.com/in/elaf-a-22a51331a" target="_blank">linkedin.com/in/elaf-a-22a51331a</a>
     </p>
-    
     <p>
       <strong>GitHub:</strong>
       <a href="https://github.com/elaf16" target="_blank">github.com/elaf16</a>
     </p>
-    
 
-    <!-- الملخص الشخصي -->
-    <h2>الملخص الشخصي</h2>
+    <!-- Summary -->
+    <h2>Profile Summary</h2>
     <p>
-      طالبة في علوم الحاسب مهتمة بتطوير البرمجيات والذكاء الاصطناعي، ولدي
-      خبرة في عدة مشاريع أكاديمية.
+      A computer science student interested in software development and artificial intelligence, with experience in various academic projects.
     </p>
 
-    <!-- المهارات -->
-    <h2>المهارات</h2>
+    <!-- Skills -->
+    <h2>Skills</h2>
     <ul>
       <li>Python, HTML, CSS, Java</li>
-      <li>قواعد البيانات (SQL)</li>
-      <li>تحليل الأنظمة وكتابة التقارير</li>
+      <li>Databases (SQL)</li>
+      <li>Systems analysis and technical report writing</li>
     </ul>
 
-    <!-- التعليم -->
-    <h2>التعليم</h2>
-    <p><strong>جامعة القصيم</strong> – بكالوريوس في علوم الحاسب</p>
+    <!-- Education -->
+    <h2>Education</h2>
+    <p><strong>Qassim University</strong> – Bachelor’s Degree in Computer Science</p>
 
-    <!-- المشاريع -->
-    <h2>المشاريع</h2>
+    <!-- Projects -->
+    <h2>Projects</h2>
     <div class="project">
-      <h3>نظام إدارة مكتبة (بلغة Java)</h3>
+      <h3>Library Management System (Java)</h3>
       <p>
-        مشروع أكاديمي يهدف إلى إدارة مكتبة تشمل العمليات الأساسية مثل إضافة
-        الكتب، البحث، حذف وتحديث بيانات الكتب، باستخدام Java وواجهات رسومية.
+        An academic project to manage a library with essential operations such as adding books, searching, deleting, and updating book records using Java and simple graphical interfaces.
       </p>
       <ul>
-        <li>إضافة/تعديل/حذف كتب باستخدام OOP</li>
-        <li>استخدام ملفات لحفظ البيانات</li>
-        <li>واجهة مستخدم بسيطة (Swing أو Terminal)</li>
+        <li>Add/Edit/Delete books using OOP principles</li>
+        <li>Data storage using files</li>
+        <li>Simple user interface (Swing or Terminal)</li>
       </ul>
     </div>
 
-    <!-- اللغات -->
-    <h2>اللغات</h2>
+    <!-- Languages -->
+    <h2>Languages</h2>
     <ul>
-      <li>العربية – اللغة الأم</li>
-      <li>الإنجليزية – جيد جدًا</li>
+      <li>Arabic – Native</li>
+      <li>English – Very Good</li>
     </ul>
   </div>
 
-  <!-- سكربت بسيط لتبديل الوضع -->
+  <!-- Script for mode switching -->
   <script>
     const toggleBtn = document.getElementById("toggleMode");
     toggleBtn.addEventListener("click", () => {
@@ -82,5 +80,4 @@
   </script>
 </body>
 </html>
-
 
